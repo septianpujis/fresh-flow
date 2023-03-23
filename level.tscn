@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw4k0376is0fu"]
+
+[ext_resource type="Script" path="res://Level.gd" id="1_0lyv0"]
+[ext_resource type="Texture2D" uid="uid://dsmbiigqx8gj" path="res://Asset/game-assets-rapidpunches-FEB2021/tiles/32bit-main-water-close-14.png" id="2_dss8f"]
+
+[sub_resource type="Curve2D" id="Curve2D_4nm3x"]
+_data = {
+"points": PackedVector2Array(-114.551, 4.24264, 114.551, -4.24264, 1376, 140, -233.345, -5.65685, 233.345, 5.65685, 1732, 289, 4.24264, 213.546, -4.24264, -213.546, 2196, 120, -70.7107, -70.7107, 70.7107, 70.7107, 2877, 276, 0, 0, 0, 0, 2883, 364, 207, -4, -207, 4, -129, 364, -103.5, -155.5, 103.5, 155.5, -30, 251, -87, 21.5, 87, -21.5, 711, 122, -48.0833, -46.6691, 48.0833, 46.6691, 895, 266, -5.65685, -107.48, 5.65685, 107.48, 1035, 263, -63.6396, -127.279, 63.6396, 127.279, 1271, 219, -76.3675, 5.65685, 76.3675, -5.65685, 1376, 140)
+}
+point_count = 12
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_0lyv0")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_4nm3x")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("2_dss8f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+texture_repeat = 2
+default_color = Color(0, 0.635294, 0.807843, 1)
