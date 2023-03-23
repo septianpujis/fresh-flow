@@ -1,0 +1,55 @@
+[gd_scene load_steps=11 format=3 uid="uid://dueundnrn0bpp"]
+
+[ext_resource type="Texture2D" uid="uid://dutpcodtoqw0p" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-1.png" id="1_ok8jr"]
+[ext_resource type="Texture2D" uid="uid://0rqmlk8ycbfn" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-2.png" id="2_252kr"]
+[ext_resource type="Texture2D" uid="uid://denvpfqwkwoik" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-3.png" id="3_0xa7n"]
+[ext_resource type="Texture2D" uid="uid://c2he8hdcbvw1e" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-4.png" id="4_c0w37"]
+[ext_resource type="Texture2D" uid="uid://dughtftmmyh13" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-5.png" id="5_c0reg"]
+[ext_resource type="Texture2D" uid="uid://ckrmcxrkt48hg" path="res://Asset/128x256-RAPIDPUNCHES-FEB2021-6.png" id="6_ymxfx"]
+[ext_resource type="Texture2D" uid="uid://bc1k3mb67c2nw" path="res://Asset/RAPIDPUNCHES-FEB2021.png" id="7_ayww0"]
+[ext_resource type="Texture2D" uid="uid://c78o1ttq227lw" path="res://Asset/game-assets-rapidpunches-FEB2021/svg-sprites/8bit-angler1.svg" id="8_ltuki"]
+[ext_resource type="Texture2D" uid="uid://cfa1gtd73y0xf" path="res://Asset/game-assets-rapidpunches-FEB2021/tiles/8bit-tile-sparkle-0.png" id="9_jxly5"]
+[ext_resource type="Texture2D" uid="uid://s5kotxc7b5hh" path="res://Asset/game-assets-rapidpunches-FEB2021/tiles/8bit-main-water.svg" id="10_bumyf"]
+
+[node name="128x256-rapidpunches-feb2021-1" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(-496, 592)
+scale = Vector2(7.49219, 7.49219)
+texture = ExtResource("1_ok8jr")
+
+[node name="128x256-rapidpunches-feb2021-2" type="Sprite2D" parent="."]
+position = Vector2(135.074, -9.87695)
+texture = ExtResource("2_252kr")
+
+[node name="128x256-rapidpunches-feb2021-3" type="Sprite2D" parent="."]
+position = Vector2(291.37, 9.61001)
+texture = ExtResource("3_0xa7n")
+
+[node name="128x256-rapidpunches-feb2021-4" type="Sprite2D" parent="."]
+position = Vector2(426.845, 2.00209)
+texture = ExtResource("4_c0w37")
+
+[node name="128x256-rapidpunches-feb2021-5" type="Sprite2D" parent="."]
+position = Vector2(567.258, 1.20126)
+texture = ExtResource("5_c0reg")
+
+[node name="128x256-rapidpunches-feb2021-6" type="Sprite2D" parent="."]
+position = Vector2(702.732, -98.7696)
+texture = ExtResource("6_ymxfx")
+
+[node name="Rapidpunches-feb2021" type="Sprite2D" parent="."]
+position = Vector2(-201.41, 15.2159)
+texture = ExtResource("7_ayww0")
+
+[node name="8Bit-angler1" type="Sprite2D" parent="."]
+position = Vector2(-30.1647, -181.789)
+scale = Vector2(7.70751, 7.70751)
+texture = ExtResource("8_ltuki")
+
+[node name="8Bit-tile-sparkle-0" type="Sprite2D" parent="."]
+position = Vector2(44.5798, -199.675)
+texture = ExtResource("9_jxly5")
+
+[node name="8Bit-main-water" type="Sprite2D" parent="."]
+position = Vector2(31.366, -176.717)
+texture = ExtResource("10_bumyf")
