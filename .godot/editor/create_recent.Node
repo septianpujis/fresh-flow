@@ -1,0 +1,9 @@
+Sprite2D
+TouchScreenButton
+CanvasLayer
+CanvasGroup
+CollisionShape2D
+StaticBody2D
+RigidBody2D
+CharacterBody2D
+Area2D

@@ -1,9 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://cb2tasfko3khl"]
+[gd_scene load_steps=5 format=3 uid="uid://cb2tasfko3khl"]
 
-[ext_resource type="Texture2D" uid="uid://cqjej2k6iub4v" path="res://icon.svg" id="1_3tk32"]
+[ext_resource type="PackedScene" uid="uid://cku4mqaad510g" path="res://character.tscn" id="1_7akbh"]
+[ext_resource type="PackedScene" uid="uid://bo84wyjyj0h8f" path="res://Movement.tscn" id="2_7nuct"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gp6is"]
+b = Vector2(0, 618)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_1i3lq"]
+b = Vector2(1130, 0)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(549, 302)
-texture = ExtResource("1_3tk32")
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1138, 17)
+shape = SubResource("SegmentShape2D_gp6is")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(14, 20)
+shape = SubResource("SegmentShape2D_gp6is")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11, 20)
+shape = SubResource("SegmentShape2D_1i3lq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11, 628)
+shape = SubResource("SegmentShape2D_1i3lq")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_7akbh")]
+position = Vector2(143, 295)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_7nuct")]
+
+[connection signal="use_move_vector" from="CanvasLayer" to="CharacterBody2D" method="_on_canvas_layer_use_move_vector"]

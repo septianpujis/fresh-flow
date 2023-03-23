@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo84wyjyj0h8f"]
+
+[ext_resource type="Script" path="res://TouchScreenButton.gd" id="1_gwt21"]
+[ext_resource type="Texture2D" uid="uid://cqjej2k6iub4v" path="res://icon.svg" id="2_6uyhu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2q6t"]
+radius = 64.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_gwt21")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(952, 480)
+texture_normal = ExtResource("2_6uyhu")
+shape = SubResource("CircleShape2D_e2q6t")
+
+[node name="InnerCircle" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(973, 539)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_6uyhu")
