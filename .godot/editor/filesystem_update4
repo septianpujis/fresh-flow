@@ -1,7 +1,6 @@
-res://dump_sprite.tscn
-res://Level.gd
+res://level.tscn
 res://node_2d.tscn
 res://character.tscn
 res://Movement.tscn
-res://level.tscn
+res://Level.gd
 res://gameConfig.gd

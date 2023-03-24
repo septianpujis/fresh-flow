@@ -1,9 +1,12 @@
+StaticBody2D
+AnimatableBody2D
+CharacterBody2D
+Node2D
 Marker2D
 Camera2D
 Line2D
 Polygon2D
 CollisionPolygon2D
-StaticBody2D
 Path2D
 Sprite2D
 TouchScreenButton
@@ -11,5 +14,4 @@ CanvasLayer
 CanvasGroup
 CollisionShape2D
 RigidBody2D
-CharacterBody2D
 Area2D
